@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Kathrins CRM</title>
+<link rel="icon" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="app" class="app" hidden>
+    <aside class="side" aria-label="Hauptnavigation">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span><div><strong>Kathrins CRM</strong><small>doTERRA · lokal</small></div></div>
+      <nav id="nav"></nav>
+      <div class="side-foot"><button class="ghost small" id="logout">Abmelden</button></div>
+    </aside>
+    <div class="main">
+      <header class="top">
+        <div class="search">
+          <input id="globalSearch" type="search" placeholder="Name, doTERRA-ID oder Ort suchen …" aria-label="Suche" autocomplete="off">
+          <div id="searchResults" class="search-results" hidden></div>
+        </div>
+        <button id="quickNote" class="primary">+ Notiz</button>
+        <a href="#/daten" id="dataPill" class="pill" title="Datenstand">Daten …</a>
+      </header>
+      <div id="banner"></div>
+      <main id="view" tabindex="-1"></main>
+    </div>
+    <nav class="bottom-nav" id="bottomNav" aria-label="Navigation mobil"></nav>
+  </div>
+
+  <div id="auth" class="auth" hidden>
+    <div class="auth-card">
+      <span class="brand-mark big" aria-hidden="true"></span>
+      <h1>Kathrins CRM</h1>
+      <p id="authHint">Bitte PIN eingeben.</p>
+      <form id="authForm">
+        <input id="pin" type="password" inputmode="numeric" autocomplete="current-password" placeholder="PIN" required minlength="6" maxlength="12" pattern="\d{6,12}">
+        <input id="pin2" type="password" inputmode="numeric" placeholder="PIN wiederholen" hidden>
+        <button class="primary" type="submit" id="authBtn">Anmelden</button>
+        <p class="error" id="authErr" role="alert"></p>
+      </form>
+    </div>
+  </div>
+
+  <dialog id="modal"><div id="modalBody"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>

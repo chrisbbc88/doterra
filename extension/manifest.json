@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Kathrins CRM – doTERRA Abgleich",
+  "version": "1.1.0",
+  "description": "Liest Daten aus dem eingeloggten doTERRA Office (nur lesend) und überträgt sie an das lokale CRM auf diesem Rechner.",
+  "permissions": ["scripting", "storage", "tabs", "alarms", "notifications"],
+  "host_permissions": [
+    "https://office.doterra.com/*",
+    "http://127.0.0.1:8787/*",
+    "http://localhost:8787/*"
+  ],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup.html", "default_title": "CRM-Abgleich" },
+  "icons": { "128": "icon.png" }
+}

@@ -1,0 +1,42 @@
+{
+  "_hinweis": "Versionierte Rangbedingungen. Jede Version hat Quelle, Gültigkeit und Prüfdatum. Werte mit null sind NICHT geprüft und werden nicht berechnet. Neue Version anlegen statt alte zu überschreiben, damit historische Auswertungen nachvollziehbar bleiben.",
+  "versions": [
+    {
+      "version": "2026-11-10-office",
+      "markt": "DE (doTERRA Europe)",
+      "gueltigAb": "2026-11-01",
+      "gueltigBis": null,
+      "geprueftAm": "2026-11-10",
+      "quelle": "doTERRA Office, Rank Tracker (Konto 15267863), Ansicht 'Ziel-Rang' am 10.11.2026",
+      "rangfolge": ["Consultant", "Manager", "Director", "Executive", "Elite", "Premier", "Silver", "Gold", "Platinum", "Diamond", "Blue Diamond", "Presidential Diamond"],
+      "raenge": {
+        "Premier": {
+          "status": "geprüft",
+          "persoenlichesLrpPv": 100,
+          "ov": 5000,
+          "tgv": 400,
+          "beine": { "anzahl": 2, "rang": "Executive" },
+          "beleg": "Rank Tracker Bein-Ansicht mit Ziel-Rang Premier: OV-Ziel 5.000, PV-Ziel 100, 'Anforderung an das Bein 2', TGV-Ziel 400, '2 Executive Beine erforderlich'"
+        },
+        "Gold": {
+          "status": "geprüft",
+          "persoenlichesLrpPv": 100,
+          "ov": null,
+          "tgv": 600,
+          "beine": { "anzahl": 3, "rang": "Premier" },
+          "beleg": "Rank Tracker Hauptansicht Ziel-Rang Gold: PV-Ziel 100, 'Beine 0/3', TGV-Ziel 600; Beine je mit Ziel-Rang Premier"
+        },
+        "Consultant": { "status": "ungeprüft" },
+        "Manager": { "status": "ungeprüft" },
+        "Director": { "status": "ungeprüft" },
+        "Executive": { "status": "ungeprüft" },
+        "Elite": { "status": "ungeprüft" },
+        "Silver": { "status": "ungeprüft" },
+        "Platinum": { "status": "ungeprüft" },
+        "Diamond": { "status": "ungeprüft" },
+        "Blue Diamond": { "status": "ungeprüft" },
+        "Presidential Diamond": { "status": "ungeprüft" }
+      }
+    }
+  ]
+}
